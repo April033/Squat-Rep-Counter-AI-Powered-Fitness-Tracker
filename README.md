@@ -26,9 +26,8 @@ Built using Python, OpenCV, and the modern MediaPipe Tasks API, the application 
 ## 📦 Installation & Setup
 
 ### Step 1 — Clone the Project
-Run this command in your terminal:
-git clone https://github.com/your-username/formfit
-cd formfit
+Run this command in your terminal: 
+git clone https://github.com/April033/Squat-Rep-Counter-AI-Powered-Fitness-Tracker
 
 ### Step 2 — Install Dependencies
 Ensure you have Python installed, then run:
@@ -41,7 +40,7 @@ pip install opencv-python mediapipe
 
 Your directory structure should look like this:
 formfit/
-├── squat_counter.py
+├── main.py
 ├── README.md
 └── models/
     └── pose_landmarker_full.task
@@ -50,7 +49,7 @@ formfit/
 
 ## ▶️ How to Use
 1. Run the application:
-   python squat_counter.py
+   python main.py
 2. Step back so the webcam can capture your full side profile (specifically your left hip, knee, and ankle).
 3. Perform a squat. As you lower your hips, you will see the depth meter on the right fill up. Once the depth meter crosses 90% and turns neon green, stand back up to complete the rep!
 4. Click on the camera window and press "q" to close the camera and exit the application.
