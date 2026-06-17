@@ -1,6 +1,6 @@
 # FormFit 🏋️‍♂️🤖 
 ### *Real-Time AI Squat Counter & Depth Analyzer*
-
+This is v1. See FormFit-AI-Squat-Tracker for the full version with radial analytics.
 **FormFit** is a computer vision-powered fitness application that tracks body pose landmarks in real-time to analyze squat depth and count repetitions. 
 
 Built using Python, OpenCV, and the modern MediaPipe Tasks API, the application calculates joint angles dynamically to provide instant visual feedback on exercise form.
