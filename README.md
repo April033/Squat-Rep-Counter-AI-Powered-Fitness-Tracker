@@ -1,13 +1,12 @@
-# FormFit 🏋️‍♂️🤖 
-### *Real-Time AI Squat Counter & Depth Analyzer*
+FormFit 
+ *Real-Time AI Squat Counter & Depth Analyzer*
 This is v1. See FormFit-AI-Squat-Tracker for the full version with radial analytics.
 **FormFit** is a computer vision-powered fitness application that tracks body pose landmarks in real-time to analyze squat depth and count repetitions. 
 
 Built using Python, OpenCV, and the modern MediaPipe Tasks API, the application calculates joint angles dynamically to provide instant visual feedback on exercise form.
 
 ---
-
-## 🚀 Features
+Features
 * **Real-Time Body Pose Tracking:** Tracks the key joints (left hip, left knee, left ankle) dynamically.
 * **Depth Progress Bar:** Features a vertical progress bar that calculates how deep you are bending into your squat (from 0% to 100%).
 * **Visual Form Feedback:** The progress bar changes color dynamically (orange to neon green) once a valid squat depth (below 100°) is achieved.
@@ -16,24 +15,24 @@ Built using Python, OpenCV, and the modern MediaPipe Tasks API, the application 
 
 ---
 
-## 🛠️ Technologies Used
+Technologies Used
 * **Python** 
 * **OpenCV** (Video capture, image flipping, drawing UI overlays, and skeletal frames)
 * **MediaPipe** (Modern Pose Landmarker Tasks API)
 
 ---
 
-## 📦 Installation & Setup
+Installation & Setup
 
-### Step 1 — Clone the Project
+Step 1 — Clone the Project
 Run this command in your terminal: 
 git clone https://github.com/April033/Squat-Rep-Counter-AI-Powered-Fitness-Tracker
 
-### Step 2 — Install Dependencies
+Step 2 — Install Dependencies
 Ensure you have Python installed, then run:
 pip install opencv-python mediapipe
 
-### Step 3 — Download the Pose Model Manually
+Step 3 — Download the Pose Model Manually
 1. Download pose_landmarker_full.task from: https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task
 2. Create a folder named "models" inside your project directory.
 3. Place the downloaded "pose_landmarker_full.task" file inside that "models" folder.
@@ -47,7 +46,7 @@ formfit/
 
 ---
 
-## ▶️ How to Use
+How to Use
 1. Run the application:
    python main.py
 2. Step back so the webcam can capture your full side profile (specifically your left hip, knee, and ankle).
@@ -56,7 +55,7 @@ formfit/
 
 ---
 
-## 🧩 How It Works
+How It Works
 1. **Webcam Capture:** OpenCV captures frames from your camera and mirrors them for natural interaction.
 2. **AI Joint Landmark Detection:** The MediaPipe Pose Landmarker processes the image and extracts the normalized coordinates of the left hip (index 23), left knee (index 25), and left ankle (index 27).
 3. **Knee Angle Calculation:** The script uses trigonometry to find the acute angle of the knee.
@@ -67,7 +66,7 @@ formfit/
 
 ---
 
-## 🎓 Learning Outcomes
+Learning Outcomes
 This project demonstrates hands-on experience in:
 * **Computer Vision & Human-Computer Interaction (HCI):** Processing video frames and drawing custom graphics dynamically.
 * **Applied Mathematics:** Using geometric vector math to calculate joint angles in a 2D plane.
@@ -76,7 +75,7 @@ This project demonstrates hands-on experience in:
 
 ---
 
-## 🔮 Future Improvements
+Future Improvements
 * Multi-exercise tracking (push-ups, lunges, and bicep curls).
 * Voice feedback to announce reps and form corrections.
 * AI-powered velocity tracking to analyze power output during exercise.
